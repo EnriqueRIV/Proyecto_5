@@ -64,7 +64,7 @@
 }
 
 .divCardBack {
-  background-image: url('images/colors.jpg');
+  background-image: url('/images/colors.jpg');
   background-size: cover;
   color: var(--eri-color-background-primary);
 }
