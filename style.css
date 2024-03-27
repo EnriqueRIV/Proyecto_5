@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+:root {
+  --eri-color-n-000: #ffffff;
+  --eri-color-n-100: #e2e2e2;
+  --eri-color-n-200: #ababab;
+  --eri-color-n-300: #6e6e6e;
+  --eri-color-n-900: #000000;
+
+  --eri-color-background-primary: var(--eri-color-n-000);
+  --eri-color-background-secondary: var(--eri-color-n-100);
+  --eri-color-background-terciary: var(--eri-color-n-200);
+  --eri-color-background-quaternary: var(--eri-color-n-900);
+
+  --eri-color-border: var(--eri-color-n-100);
+
+  --eri-color-tipography-body: var(--eri-color-n-000);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background: radial-gradient(
+      ellipse at center,
+      rgba(127, 0, 173, 0.6) 0%,
+      rgba(0, 0, 0, 0.8) 60%,
+      rgba(0, 0, 0, 1) 90%
+    ),
+    url('/images/stars.jpg');
+  background-size: cover;
+  z-index: -5;
+  color: var(--eri-color-tipography-body);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  color: var(--eri-color-tipography-body);
+  animation: neonLight 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neonLight {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff11a7,
+      0 0 70px #ff11a7, 0 0 80px #ff11a7, 0 0 100px #ff11a7, 0 0 150px #ff1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff11a7,
+      0 0 35px #ff11a7, 0 0 40px #ff11a7, 0 0 50px #ff11a7, 0 0 75px #ff11a7;
+  }
+}

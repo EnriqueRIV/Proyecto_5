@@ -1,0 +1,77 @@
+.titleWack {
+  margin-top: 4rem;
+}
+.titleWack,
+.titleWackSpanish {
+  text-align: center;
+}
+
+.divDisplay {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  margin: 1rem 0 1rem -1rem;
+}
+
+.divButtonPlay {
+  width: 80px;
+  height: 2rem;
+  border: 2px solid var(--eri-color-background-primary);
+  color: var(--eri-color-background-primary);
+  background-color: var(--eri-color-background-terciary);
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 1px 2px var(--eri-color-background-quaternary);
+}
+
+.boardContainerWack {
+  display: flex;
+  justify-content: center;
+}
+.divBoardWack {
+  width: 326px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  cursor: url('/images/hammer_2.png'), auto;
+}
+.boxWack {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--eri-color-background-primary);
+  background-image: url('/images/hole2.jpg');
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.boxWack:active {
+  background-image: url('/images/boom_1.png');
+}
+
+.mole {
+  width: 100%;
+  object-fit: cover;
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+
+@media screen and (width <= 425px) {
+  .titleWack {
+    margin-top: 5.5rem;
+  }
+  .divDisplay {
+    margin: 0.5rem 0 0.5rem -1rem;
+  }
+}

@@ -1,0 +1,39 @@
+.gamesContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem 3.5rem;
+  width: 100%;
+  margin: 5rem 0;
+  padding: 0 2rem;
+}
+
+.game {
+  width: 200px;
+}
+
+.game > a {
+  width: 100%;
+}
+
+.game > a > img {
+  width: 200px;
+  height: 230px;
+  object-fit: contain;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0px 0px 57px -14px rgba(255, 255, 255, 1.5);
+}
+
+@media screen and (width <= 768px) {
+  .gamesContainer {
+    margin: 5rem 0 3rem 0;
+  }
+}
+
+@media screen and (width <= 425px) {
+  .gamesContainer {
+    margin: 7rem 0 3rem 0;
+  }
+}

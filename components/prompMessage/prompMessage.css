@@ -1,0 +1,59 @@
+.divGameOver {
+  position: fixed;
+  top: 40%;
+  right: 37%;
+  left: 37%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 26%;
+  height: 15%;
+  gap: 10px;
+  filter: drop-shadow(5px 5px 8px #888);
+  transform: translate(-50% -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--eri-color-background-primary);
+  border-radius: 5%;
+  padding: 1.5rem;
+}
+
+.textGameOver {
+  width: 100%;
+  text-align: center;
+}
+
+.rePlayButton {
+  width: 100%;
+  height: 2rem;
+  border: 1px solid var(--eri-color-border);
+  color: var(--eri-color-background-primary);
+  background-color: var(--eri-color-background-terciary);
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (width <= 768px) {
+  .divGameOver {
+    top: 40%;
+    right: 35%;
+    left: 35%;
+    width: 28%;
+    height: 22%;
+    gap: 15px;
+  }
+}
+
+@media screen and (width <= 425px) {
+  .divGameOver {
+    top: 40%;
+    right: 17%;
+    left: 17%;
+    width: 66%;
+    height: 20%;
+    gap: 10px;
+  }
+}

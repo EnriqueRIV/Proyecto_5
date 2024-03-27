@@ -1,0 +1,27 @@
+footer {
+  position: fixed;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+.footerContainer {
+  width: 100%;
+  height: 3rem;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerContainer p {
+  color: var(--eri-color-tipography-body);
+}
+
+@media screen and (width <= 425px) {
+  .footerContainer {
+    background-color: var(--eri-color-background-terciary);
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,59 @@
+header {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 1rem;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.navBar ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 0.5rem;
+}
+.navBar h1 {
+  text-align: center;
+}
+
+.navLink {
+  background-color: var(--eri-color-background-terciary);
+  padding: 5px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  color: var(--eri-color-background-primary);
+  text-shadow: 1px 1px 2px var(--eri-color-background-quaternary);
+  border: 1px solid var(--eri-color-background-primary);
+}
+
+.navLinkMobile {
+  display: none;
+}
+
+@media screen and (width <= 768px) {
+  .navLink {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+
+  .navLinkMobile {
+    display: block;
+    background-color: var(--eri-color-background-terciary);
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--eri-color-background-primary);
+    text-shadow: 1px 1px 2px var(--eri-color-background-quaternary);
+    border: 1px solid var(--eri-color-background-primary);
+  }
+  .navText {
+    display: none;
+  }
+}
